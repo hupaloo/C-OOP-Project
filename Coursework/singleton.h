@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Визначення класу меню користувача
+// Hupalo M. S.
+// Definition of the user menu class
 
 #include "ListLink.h"
 class singleton
