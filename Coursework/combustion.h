@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Визначає клас «двигун внутрішнього згоряння». Клас-нащадок класу «engine»  
+// Hupalo M. S.
+// Defines the class "internal combustion engine". Class-descendant of the class "engine"
 #ifndef COMBUSTION_H
 #define COMBUSTION_H
 #include "engine.h"
