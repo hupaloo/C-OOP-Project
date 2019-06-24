@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Реалізація методів класу-меню singleton
+// Hupalo M. S.
+// Realization of class-container methods singleton
 #include "singleton.h"
 using namespace std;
 
