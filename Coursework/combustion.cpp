@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Реалізація методів класу combustion
+// Hupalo M. S.
+// Realization of combustion class methods 
 
 #include "combustion.h"
 //#include <istream>
