@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Реалізація методів класу-контейнера LinkList
+// Hupalo M. S.
+// Realization of class-container methods LinkList
 
 #include "ListLink.h"
 
@@ -78,7 +78,7 @@ void LinkList::showList_front() const
 }
 
 // ------------------------------------------------------------------
-void LinkList::clear()           //очистить список
+void LinkList::clear()           // clear list
 {
 	if (current)
 	{
