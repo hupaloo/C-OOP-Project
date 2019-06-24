@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Головна функція програмного додатку
+// Hupalo M. S.
+// The main function of the application
 #include "singleton.h"
 using namespace std;
 
