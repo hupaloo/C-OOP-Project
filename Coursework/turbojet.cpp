@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Реалізація методів класу turbojet
+// Hupalo M. S.
+// Realization of class-container methods turbojet
 
 #include "turbojet.h"
 //#include <fstream>
