@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Реалізація методів класу engine
+// Hupalo M. S.
+// Realization of class engine methods 
 
 #include "engine.h"
 //#include <ostream>
