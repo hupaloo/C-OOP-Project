@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Абстрактний клас, що визначає сутність ''двигун'', поля і методи для роботи з ним
+// Hupalo M. S.
+// An abstract class that defines the 'engine' essence, fields and methods for working with it
 #ifndef ENGINE_H
 #define ENGINE_H
 #include <string>
@@ -13,47 +13,46 @@ class engine
 	protected:
 		struct TData
 		{
-			double dimensions;									// Габаритні розміри двигуна
-			double vibration_level;								// Рівень вібрації двигуна
-			int details_number;									// К-сть деталей двигуна
-			string overheating_tend;							// Тенденція перегріву двигуна
-			TData(double dimensions, double vibration_level,	// Конструктор з параметрами
+			double dimensions;									
+			double vibration_level;								
+			int details_number;									
+			string overheating_tend;							
+			TData(double dimensions, double vibration_level,	
 				int details_number, string overheating_tend);	
 		};
-		string type;						// Тип двигуна
-		double weight;						// Вага двигуна
-		int cost;							// Вартість двигуна
-		int power;							// Потужність двигуна
-		TData struct_fields;				// Поля структури TData двигуна
+		string type;						
+		double weight;						
+		int cost;							
+		int power;							
+		TData struct_fields;				
 	public:
-		engine();											// Конструктор за замовчуванням
-		engine(string _type, double _weight,				// Конструктор з параметрами
+		engine();											
+		engine(string _type, double _weight,				
 			int _cost, int _power, TData _struct_fields);
-		virtual ~engine();									// Віртуальний деструктор
+		virtual ~engine();									
 		
-		double getDimensions(void) const;					// Отримання значення габаритних розмірів двигуна
-		double getVibrationLevel(void) const;				// Отримання значення рівня вібрації двигуна
-		double getWeight(void) const;						// Отримання значення ваги двигуна
-		string getOverheatingTend(void) const;				// Отримання значення тенденції перегріву двигуна
-		string getType(void) const;							// Отримання значення типу двигуна
-		int getCost(void) const;							// Отримання значення вартості двигуна
-		int getDetailsNumber(void) const;					// Отримання значення кількості деталей двигуна
-		int getPower(void) const;							// Отримання значення потужності двигуна
+		double getDimensions(void) const;					
+		double getVibrationLevel(void) const;				
+		double getWeight(void) const;						
+		string getOverheatingTend(void) const;				
+		string getType(void) const;							
+		int getCost(void) const;							
+		int getDetailsNumber(void) const;					
+		int getPower(void) const;							
+		void setCost(int _cost);							
+		void setPower(int _power);							
+		void setType(string _type);							
+		void setWeight(double _weight);						
+		void setDimensions(double _dimensions);				
+		void setVibrationLevel(double _vibration_level);	
+		void setDetailsNumber(int _details_number);			
+		void setOverheatingTend(string _overheating_tend);	
 
-		void setCost(int _cost);							// Встановлення значення вартості двигуна
-		void setPower(int _power);							// Встановлення значення потужності двигуна 
-		void setType(string _type);							// Встановлення значення типу двигуна 
-		void setWeight(double _weight);						// Встановлення значення ваги двигуна 
-		void setDimensions(double _dimensions);				// Встановлення значення габаритних розмірів двигуна 
-		void setVibrationLevel(double _vibration_level);	// Встановлення значення рівня вібрації двигуна 
-		void setDetailsNumber(int _details_number);			// Встановлення значення кількості деталей двигуна 
-		void setOverheatingTend(string _overheating_tend);	// Встановлення значення тенденції перегріву двигуна 
+		virtual void cout_object_info(ostream &);			
 
-		virtual void cout_object_info(ostream &);			// Віртуальна функція виводу загальних даних про об’єкт на екран
-
-		friend istream & operator >> (istream &, engine &);		// Перевантаження оператору	введеня з потоку
-		friend ostream & operator << (ostream &, engine &);		// Перевантаження оператору	виведення в потік
-		friend ifstream &operator >> (ifstream &, engine  &);	// Перевантаження файлового оператору	введеня з потоку
-		friend ofstream &operator << (ofstream &, engine &);	// Перевантаження файлового оператору	виведення в потік
+		friend istream & operator >> (istream &, engine &);		
+		friend ostream & operator << (ostream &, engine &);		
+		friend ifstream &operator >> (ifstream &, engine  &);	
+		friend ofstream &operator << (ofstream &, engine &);	
 };
 #endif
