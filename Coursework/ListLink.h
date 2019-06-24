@@ -1,5 +1,5 @@
-// Гупало М. С.
-// Визначення класу-контейнера за типом «двозв’язний кільцевий список»
+// Hupalo M. S.
+// Definition of the container class by the type of "double-binding circular list"
 #ifndef ListLink_H
 #define ListLink_H
 #include "combustion.h"
